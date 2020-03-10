@@ -1,0 +1,26 @@
+mixin advantagesItemCard(img, heading, description)
+    li(class="advantages-item-card")
+        div(class="advantages-img")
+            img(src=img alt="Advantages")
+        h4=  heading
+        p(class="description")= description
+
+section(class="advantages")
+    h3 Наши преимущества
+    div(class="advantages-container")
+        ul
+            +advantagesItemCard(
+                './img/advantages/piggy-bank.png',
+                'Низкая цена',
+                'Мы сотрудничаем напрямую с производителем, поэтому можем гарантировать самую низкую цену.'
+            )
+            +advantagesItemCard(
+                './img/advantages/van.png',
+                'Быстрая доставка',
+                'Весь товар уже находится на нашем складе. Нам остается только погрузить его и в путь!'
+            )
+            +advantagesItemCard(
+                './img/advantages/wheelbarrow.png',
+                'Индивидуальный подход',
+                'Вам нужны бесперебойные поставки или большая партия товара со скидкой? '
+            )       

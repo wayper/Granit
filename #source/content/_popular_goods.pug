@@ -1,0 +1,43 @@
+mixin goodsItemCard(img, heading, price, priceWithoutDiscount)
+    li(class="goods-item-card")
+        div(class="goods-img")
+            img(src=img alt="Goods")
+            if priceWithoutDiscount
+                div(class="discount-label") Акция
+        h4= heading
+        div(class="price-box")
+            if priceWithoutDiscount
+                p(class="price discount")= price
+                p(class="price-without-discount")= priceWithoutDiscount
+            else
+                p(class="price normal")= price
+        button(class="goods-card-submit") Купить
+
+section(class="popular_goods-wrapper")
+    h3 Популярные товары
+    div(class="goods-container")
+        ul
+            +goodsItemCard(
+                './img/goods/g1.png',
+                'Гранитный щебень 5-20 мм',
+                '1350 р./т',
+                '1500 р./т'
+                )  
+            +goodsItemCard(
+                './img/goods/g2.png',
+                'Гранитный щебень 5-20 мм',
+                '1350 р./т',
+                '1500 р./т'
+                )                    
+            +goodsItemCard(
+                './img/goods/g3.png',
+                'Гранитный щебень 0-5 мм (отсев)',
+                '1350 р./т',
+                ''
+                )  
+            +goodsItemCard(
+                './img/goods/g4.png',
+                'Гранитный щебень 5-20 мм',
+                '1350 р./т',
+                ''
+                )                                  

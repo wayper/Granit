@@ -1,0 +1,22 @@
+mixin servicesItemCard(img, heading)
+    li(class="services-item-card")
+        div(class="services-img")
+            img(src=img alt="Services")
+        h4=  heading
+
+section(class="services")
+    h3 Наши услуги
+    div(class="services-container")
+        ul
+            +servicesItemCard(
+                './img/services/2image.png',
+                'Аренда самосвала'
+            )
+            +servicesItemCard(
+                './img/services/3image.png',
+                'Аренда спецтехники'
+            )
+            +servicesItemCard(
+                './img/services/1image.png',
+                'Рытье траншеи'
+            )                        

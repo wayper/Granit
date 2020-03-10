@@ -1,0 +1,31 @@
+mixin productionItemCard(img, heading, description, price)
+    li(class="production-item-card")
+        div(class="product-img")
+            img(src=img alt="Production")
+        h4= heading
+        p(class="description")= description
+        p(class="price")= price
+        button(class="product-card-submit") Подробнее
+
+section(class="availability-wrapper")
+    h3 Всегда в наличии
+    div(class="production-container")
+        ul
+            +productionItemCard(
+                './img/production/sand.png',
+                'Песок',
+                'Мелкий речной песок повышает прочность, долговечность и морозоустойчивость растворов, в состав которых он входит.',
+                'от 330 р./т'
+                )
+            +productionItemCard(
+                './img/production/macadam.png',
+                'Щебень',
+                'Мелкий речной песок повышает прочность, долговечность и морозоустойчивость растворов, в состав которых он входит.',
+                'от 580 р./т'
+                )
+            +productionItemCard(
+                './img/production/dirt.png',
+                'Грунт',
+                'Мелкий речной песок повышает прочность, долговечность и морозоустойчивость растворов, в состав которых он входит.',
+                'от 280 р./т'
+                )                

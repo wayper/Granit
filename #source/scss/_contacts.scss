@@ -1,0 +1,68 @@
+.contacts {
+    position: relative;
+    padding: 80px 0;
+    //background-image: url(../../img/contacts/location-pin_2.png) repeat;
+    //background: url(../../img/contacts/map.png) 0 0 no-repeat fixed;
+    background-image: url(../../img/contacts/location-pin_2.png), url(../../img/contacts/map.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, left;
+  background-attachment: fixed;
+    &::after {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 43px;
+        content: '';
+        top: 50%;
+        left: 100px;
+        //background: url(../../img/contacts/location-pin_2.png) 0 0 no-repeat;
+    }
+    .contacts-container {
+        display: flex;
+        margin: 0 auto;
+        justify-content: flex-end;
+        max-width: 960px;
+        .contacts-data-box {
+            padding: 59px;
+            width: 35%;
+            background-color: #ffffff;
+            color: #292929;
+            h2 {
+                color: #292929;
+                font-size: 22px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            .tel-box {
+                margin-top: 40px;
+                padding-left: 25px;
+                font-size: 17px;
+                font-weight: bold;
+                line-height: 30px;
+                background-image: url(../../img/contacts/phone-receiver.png);
+                background-repeat: no-repeat;
+                background-position: 0 8px;
+            }
+            .address {
+                margin-top: 20px;
+                padding-left: 25px;
+                font-size: 17px;
+                font-weight: 500;
+                line-height: 20px;
+                background-image: url(../../img/contacts/location-pin_1.png);
+                background-repeat: no-repeat;
+                background-position: 0 4px;
+            }
+            .email {
+                margin-top: 20px;
+                padding-left: 25px;
+                font-size: 17px;
+                font-weight: 500;
+                line-height: 20px;
+                background-image: url(../../img/contacts/close-envelope.png);
+                background-repeat: no-repeat;
+                background-position: 0 5px;
+            }
+        }
+    }
+}
