@@ -51,3 +51,9 @@
         }
     }
 }
+
+@media all and (max-width: 500px) {
+    .advantages-container ul {
+        flex-direction: column;
+    }
+}

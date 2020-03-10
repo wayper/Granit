@@ -1,0 +1,99 @@
+footer {
+    padding: 43px 0;
+    background-color: #292929;
+    color: #ffffff;
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 960px;
+        min-height: 100px;
+        @media screen and (max-width: 500px) {
+            & {
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+        .first-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @media screen and (max-width: 500px) {
+                & {
+                    align-items: center;
+                }
+            }
+            .logo-wrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                .logo-title-box {
+                    margin-left: 10px;
+                    h1 {
+                        font-size: 20px;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+                    p {
+                        font-size: 12px;
+                        color: #969696;
+                        font-weight: 500;
+                        line-height: 17px;
+                    }
+                }
+            }
+            .copyright {
+                font-size: 12px; 
+            }
+        }
+        .feedback-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @media screen and (max-width: 500px) {
+                & {
+                    align-items: center;
+                }
+            }
+            .feedback-title-box {
+                text-align: right;
+                .feedback-tel {
+                    margin-left: 20px;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                p {
+                    font-size: 12px;
+                    color: #969696;
+                    font-weight: 500;
+                    line-height: 17px;
+                }
+            }
+            .feedback-form-header button {
+                width: 160px;
+                height: 40px;
+                margin-left: 20px;
+                background: inherit;
+                border: 2px solid #ffffff;
+                font-size: 12px;
+                color: #ffffff;
+                font-weight: 600;
+                cursor: pointer;
+            }
+    }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .landing-header .feedback-wrapper {
+        & .feedback-title-box {
+            margin-bottom: 10px;
+        };
+    }
+}
+
+
+

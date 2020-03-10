@@ -1,22 +1,11 @@
 .contacts {
     position: relative;
     padding: 80px 0;
-    //background-image: url(../../img/contacts/location-pin_2.png) repeat;
-    //background: url(../../img/contacts/map.png) 0 0 no-repeat fixed;
     background-image: url(../../img/contacts/location-pin_2.png), url(../../img/contacts/map.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: center center, left;
-  background-attachment: fixed;
-    &::after {
-        display: block;
-        position: absolute;
-        width: 30px;
-        height: 43px;
-        content: '';
-        top: 50%;
-        left: 100px;
-        //background: url(../../img/contacts/location-pin_2.png) 0 0 no-repeat;
-    }
+    background-repeat: no-repeat;
+    background-position: center center, center center;
+    background-attachment: fixed;
+    background-size: auto, auto 100%;
     .contacts-container {
         display: flex;
         margin: 0 auto;

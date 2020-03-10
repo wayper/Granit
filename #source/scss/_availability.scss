@@ -1,0 +1,80 @@
+.availability-wrapper {
+    padding: 30px 0;
+    display: block;
+    min-height: 60%;
+    text-align: center;
+    h2 {
+        margin: 0 0 55px 0;
+        text-transform: uppercase;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+    .production-container {
+        max-width: 960px;
+        margin: 0 auto;
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            list-style: none;
+            .production-item-card {
+                display: block;
+                padding: 35px 0;
+                max-width: 296px;
+                height: 400px;
+                border: 2px solid #f4f4f4;
+                .product-img {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    padding: 0 10px;
+                    height: 170px;
+                    overflow: hidden;
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                h4 {
+                    display: inline;
+                    line-height: 30px;
+                    font-size: 15px;
+                    font-weight: bold;
+                    border-bottom: 1px solid gray;
+                }
+                .description {
+                    display: block;
+                    height: 65px;
+                    color: gray;
+                    width: 95%;
+                    font-size: 14px;
+                    margin: 0 auto;
+                    overflow: hidden;
+                }
+                .price {
+                    display: block;
+                    padding: 30px 0;
+                    color: black;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+                .product-card-submit {
+                    background-color: #ffcc00;
+                    border: none;
+                    width: 180px;
+                    height: 50px;
+                    color: black;
+                    font-size: 13px;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
