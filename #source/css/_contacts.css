@@ -1,0 +1,60 @@
+.contacts {
+  position: relative;
+  padding: 80px 0;
+  background-image: url(../img/contacts/location-pin_2.png), url(../img/contacts/map.png);
+  background-repeat: no-repeat;
+  background-position: center center, center center;
+  background-attachment: fixed;
+  background-size: auto, auto 100%;
+}
+.contacts .contacts-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: flex-end;
+  max-width: 960px;
+}
+.contacts .contacts-container .contacts-data-box {
+  padding: 59px;
+  width: 35%;
+  background-color: #ffffff;
+  color: #292929;
+}
+.contacts .contacts-container .contacts-data-box h2 {
+  color: #292929;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.contacts .contacts-container .contacts-data-box .tel-box {
+  margin-top: 40px;
+  padding-left: 25px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 30px;
+  background-image: url(../img/contacts/phone-receiver.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 0 8px;
+}
+.contacts .contacts-container .contacts-data-box .address {
+  margin-top: 20px;
+  padding-left: 25px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20px;
+  background-image: url(../img/contacts/location-pin_1.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 0 4px;
+}
+.contacts .contacts-container .contacts-data-box .email {
+  margin-top: 20px;
+  padding-left: 25px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20px;
+  background-image: url(../img/contacts/close-envelope.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+}

@@ -1,7 +1,7 @@
 .contacts {
     position: relative;
     padding: 80px 0;
-    background-image: url(../../img/contacts/location-pin_2.png), url(../../img/contacts/map.png);
+    background-image: url(../img/contacts/location-pin_2.png), url(../img/contacts/map.png);
     background-repeat: no-repeat;
     background-position: center center, center center;
     background-attachment: fixed;
@@ -28,7 +28,8 @@
                 font-size: 17px;
                 font-weight: bold;
                 line-height: 30px;
-                background-image: url(../../img/contacts/phone-receiver.png);
+                background-image: url(../img/contacts/phone-receiver.png);
+                background-size: auto;
                 background-repeat: no-repeat;
                 background-position: 0 8px;
             }
@@ -38,7 +39,8 @@
                 font-size: 17px;
                 font-weight: 500;
                 line-height: 20px;
-                background-image: url(../../img/contacts/location-pin_1.png);
+                background-image: url(../img/contacts/location-pin_1.png);
+                background-size: auto;
                 background-repeat: no-repeat;
                 background-position: 0 4px;
             }
@@ -48,7 +50,8 @@
                 font-size: 17px;
                 font-weight: 500;
                 line-height: 20px;
-                background-image: url(../../img/contacts/close-envelope.png);
+                background-image: url(../img/contacts/close-envelope.png);
+                background-size: auto;
                 background-repeat: no-repeat;
                 background-position: 0 5px;
             }
